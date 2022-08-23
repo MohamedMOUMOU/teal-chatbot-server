@@ -14,7 +14,7 @@ import { connectToMongo } from './utils/mongo';
 import Context from './types/context';
 import { verifyJwt } from './utils/jwt';
 import { User } from './schemas/user.schema';
-import { verifyAccessToken } from './utils/verifyAzureToken';
+import { verifyAzureToken } from './utils/verifyAzureToken';
 
 async function bootstrap(){
     // Build the schema
@@ -31,10 +31,9 @@ async function bootstrap(){
         context: (ctx: Context) => {
             const context = ctx;
             if(ctx.req.headers["authorization"]){
-                const user = verifyAccessToken(ctx.req.headers["authorization"]);
+                const user = verifyAzureToken(ctx.req.headers["authorization"]);
                 context.user = user;
             }
-            console.log(context.user);
             return context;
         },
         plugins: [process.env.NODE_ENV === 'production' ? 

@@ -1,6 +1,4 @@
 import { getModelForClass, prop, ReturnModelType, index } from '@typegoose/typegoose';
-import { IsEmail, MinLength, MaxLength } from 'class-validator';
-import { StringExpression } from 'mongoose';
 import { Field, InputType, ObjectType } from 'type-graphql';
 
 
