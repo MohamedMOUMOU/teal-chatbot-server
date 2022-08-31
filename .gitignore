@@ -1,3 +1,3 @@
 node_modules
-src/auth/tealagentCredentials
+src/auth/tealagentCredentials.json
 .env
