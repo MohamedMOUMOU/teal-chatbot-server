@@ -1,4 +1,4 @@
-import * as authData from './authInfo.json';
+import * as authData from './tealagentCredentials.json';
 import { v4 as uuidv4 } from 'uuid';
 const dialogflow = require('@google-cloud/dialogflow');
 

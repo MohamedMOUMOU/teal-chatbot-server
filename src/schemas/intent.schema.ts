@@ -1,9 +1,8 @@
-import { getModelForClass, prop, ReturnModelType, index } from '@typegoose/typegoose';
-import { Field, ObjectType } from 'type-graphql';
-
+import { prop } from '@typegoose/typegoose';
+import { Field, InputType, ObjectType } from 'type-graphql';
 
 @ObjectType()
-
+@InputType()
 export class Intent {
 
     @Field(() => String)
@@ -18,5 +17,3 @@ export class Intent {
     @prop({required: true})
     fullfillment: string
 }
-
-export const IntentModel: ReturnModelType<typeof Intent> = getModelForClass(Intent);
