@@ -37,9 +37,9 @@ To configure a connection between dialogflow and this API, follow these steps:
 
 For demo purposes, add an intent to the Dialogflow app with the name "Leave policy", and add some few questions for training (The screensot below gives an example).
 
-![image](./images/demoDialogflow.png)
+![image](/images/demoDialogflow.png)
 
-## The question answering API
+## The Question Answering API
 Follow the steps indicated in the following [Readme file](https://github.com/MohamedMOUMOU/BERTQA_SQUADV2_API) to run the question answering api.
 
 ## Seeding
@@ -47,7 +47,7 @@ Before running the server, execute the following command to run the seeds.
 ```
 npm run seed
 ```
-## Running the server
+## Running the Server
 
 ```
 cd TealChatbotServer
